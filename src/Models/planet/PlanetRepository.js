@@ -1,5 +1,5 @@
 import {planet} from "../../data/UserPlanet"
-import Planet from "./planet/Planet"
+import Planet from "./Planet"
 
 class PlanetsRepository {
     constructor() {

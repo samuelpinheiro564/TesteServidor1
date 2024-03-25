@@ -1,11 +1,13 @@
-export const planet =(userPlanet)=>{
-    id=userPlanet.id;
-    nome= userPlanet.nome;
-    data=userPlanet.data;
-    cor1 = userPlanet.cor1;
-    cor2 = userPlanet.cor2;
-    populacao = userPlanet.populacao;
-    loc = userPlanet.loc;
-    nome_gov = userPlanet.nome_gov;
-    titulo_gov = userPlanet.titulo_gov;
-}
+export const planet ={
+    id: 1,
+    nome: "Terra",
+    data: "22/04/2021",
+    cor1: "Azul",
+    cor2: "Verde",
+    populacao: "7.800.000.000",
+    loc: "Sistema Solar",
+    nome_gov: "Vladir Putin",
+    titulo_gov: "governante Mundial"
+};
+
+
