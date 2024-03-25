@@ -1,4 +1,4 @@
-export const Planet =(userPlanet)=>{
+export const planet =(userPlanet)=>{
     id=userPlanet.id;
     nome= userPlanet.nome;
     data=userPlanet.data;

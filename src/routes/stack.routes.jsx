@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import Home from "../screens/Home";
-import CriarPlaneta from "../screens/CriarPlaneta";
+import CriarPlanetas from "../screens/CriarPlanetas";
 
 
 const Stack = createNativeStackNavigator();
@@ -9,6 +9,22 @@ const Stack = createNativeStackNavigator();
 const StackRoutes = () => {
   return (
     <Stack.Navigator>
+       <Stack.Screen
+        name="CriarPlanetas"
+        component={CriarPlanetas}
+        options={{
+          StackBarIcon: ({ focused }) => (
+            <Feather
+              name="list"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+          ),
+          StackBarLabel: "Categorias",
+          StackBarActiveTintColor: "#131313",
+          StackBarInactiveTintColor: "#D6D6D6",
+        }}
+      />
         <Stack.Screen
         name="Home"
         component={Home}
@@ -26,23 +42,7 @@ const StackRoutes = () => {
         }}
       />
 
-
-      <Stack.Screen
-        name="CriarPlaneta"
-        component={CriarPlaneta}
-        options={{
-          StackBarIcon: ({ focused }) => (
-            <Feather
-              name="list"
-              size={24}
-              color={focused ? "#131313" : "#D6D6D6"}
-            />
-          ),
-          StackBarLabel: "Categorias",
-          StackBarActiveTintColor: "#131313",
-          StackBarInactiveTintColor: "#D6D6D6",
-        }}
-      />
+     
     </Stack.Navigator>
   );
 };
