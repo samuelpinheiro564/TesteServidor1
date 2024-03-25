@@ -1,18 +1,22 @@
-import { View } from "react-native";
+import { View,ImageBackground} from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 import styles from "./styles";
 import Title from "../../components/Title";
-import { user } from "../../data/Profile";
-import TouchButton from "../../components/TouchButton";
+import { ScrollView } from "react-native-gesture-handler";
 
 export default function Home() {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
-      <Title title="Home" />
+      
+      <ScrollView>
+      <ImageBackground source={require('../../../assets/fotogalaxia1.jpg')} style={styles.imageBackground}>
+  
+           <Title title="Home " />
 
-      <TouchButton route="Profile" title="Go to Profile" data={user} />
-
-      <TouchButton route="Category" title="Go to Category" />
+           </ImageBackground>
+      </ScrollView>
     </View>
   );
 }
