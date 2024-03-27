@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
-    alignItems: "center",
+
   },
   navButton: {
     marginTop: 20,
@@ -21,14 +21,41 @@ const styles = StyleSheet.create({
   },
   imageForeground: {
     width: 1000,
-    height:1000,
+    height:10000,
   },
   text: {
     color: "white",
-    fontSize: 42,
+    fontSize:20 ,
     fontWeight: "bold",
-    textAlign: "center"
+    textAlign: "left",
+    marginLeft: 10,
+    marginTop: 20,
+    width: "90%",
+  },
+  imagem_conquistador: {
+    width: 700,
+    height: 500,
+  marginTop: 20,
+  borderRadius: 10,
+  },
+  titulo:{
+  marginTop: 20,
+
+  },
+  icons:{
+    width: 50,
+    height: 50,
+    margin: 10,
+   backgroundColor: "white",
+   borderRadius: 10,  
+  },
+  containerIcons:{
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    alignItems: "center",
   }
+
 });
 
 export default styles;

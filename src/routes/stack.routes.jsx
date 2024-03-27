@@ -14,7 +14,7 @@ const StackRoutes = () => {
   return (
     
     <Stack.Navigator>
-           {/* <Stack.Screen
+            <Stack.Screen
         name="Home"
         component={Home}
         options={{
@@ -29,7 +29,7 @@ const StackRoutes = () => {
           StackBarActiveTintColor: "#131313",
           StackBarInactiveTintColor: "#D6D6D6",
         }}
-      /> */}
+      />  
        <Stack.Screen
         name="CriarPlanetas"
         component={CriarPlanetas}
