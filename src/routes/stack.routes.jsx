@@ -5,6 +5,7 @@ import CriarPlanetas from "../screens/CriarPlanetas";
 import Planetas from "../screens/Planetas";
 import Descricao from "../screens/Descricao";
 import { planet } from '../data/UserPlanet';
+import Conquistador from '../screens/Conquistador';
 
 
 
@@ -85,7 +86,22 @@ const StackRoutes = () => {
         }}
       />
           
-    
+          <Stack.Screen
+        name="Conquistador"
+        component={Conquistador}
+        options={{
+          StackBarIcon: ({ focused }) => (
+            <Feather
+              name="Conquistador"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+          ),
+          StackBarLabel: "Conquistador",
+          StackBarActiveTintColor: "#131313",
+          StackBarInactiveTintColor: "#D6D6D6",
+        }}
+      />
 
     </Stack.Navigator>
   );

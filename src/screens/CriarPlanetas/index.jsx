@@ -1,4 +1,4 @@
-import { Text, View,TouchableOpacity,TextInput } from "react-native";
+import { Text, View,TouchableOpacity,TextInput,ImageBackground } from "react-native";
 import styles from "./styles";
 import {useNavigation} from "@react-navigation/native";
 import { useState, useEffect } from "react";
@@ -65,60 +65,73 @@ setAtualizar(true);
   };
 
   return (
+    <ImageBackground
+    source={require("../../../assets/fotogalaxia1.jpg")}
+    style={styles.imageBackground}
+  >
     <View style={styles.container}>
       <Title title={atualizar ?"editar Planeta" : "Criar Planeta"} />
 
 <TextInput 
+style={styles.inputs}
 placeholder='digite o nome do planeta'
 onChangeText={setNome}
 value={nome}
 />
 <TextInput 
+style={styles.inputs}
 placeholder='digite o nome do planeta'
 onChangeText={setData}
 value={data}
 />
 <TextInput 
+style={styles.inputs}
 placeholder='digite o nome do planeta'
 onChangeText={setCor1}
 value={cor1}
 />
 <TextInput 
+style={styles.inputs}
 placeholder='digite o nome do planeta'
 onChangeText={setCor2}
 value={cor2}
 />
 <TextInput 
+style={styles.inputs}
 placeholder='digite o nome do planeta'
 onChangeText={setPopulacao}
 value={populacao}
 />
 <TextInput 
+style={styles.inputs}
 placeholder='digite o nome do planeta'
 onChangeText={setLoc}
 value={loc}
 />
 <TextInput 
+style={styles.inputs}
 placeholder='digite o nome do planeta'
 onChangeText={setNome_gov}
 value={nome_gov}
 />
 <TextInput 
+style={styles.inputs}
 placeholder='digite o nome do planeta'
 onChangeText={setTitulo_gov}
 value={titulo_gov}
 />
-<TouchableOpacity  onPress={UserAction}>
-        <Text>{atualizar ? "Salvar Alterações" : "Criar Planeta"}</Text>
+<TouchableOpacity  onPress={UserAction} style={styles.button}>
+        <Text style={styles.textbutton}>{atualizar ? "Salvar Alterações" : "Criar Planeta"}</Text>
       </TouchableOpacity>
 
       {atualizar && (
-        <TouchableOpacity  onPress={ClearInputs}>
-          <Text>Cancelar Edição</Text>
+        <TouchableOpacity  onPress={ClearInputs} style={styles.button}>
+          <Text style={styles.textbutton}>Cancelar Edição</Text>
         </TouchableOpacity>
       )}
    
     </View>
+    </ImageBackground> 
   );
 }
 

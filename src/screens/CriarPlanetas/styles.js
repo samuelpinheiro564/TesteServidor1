@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#C9D4FF",
     borderRadius: 5,
   },
-  user: {
+  planet: {
     marginTop: 20,
     padding: 10,
     backgroundColor: "#C9D4FF",
@@ -21,6 +21,29 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 16,
   },
+  button:{
+    borderColor:"white",
+    borderWidth:2,
+    width: 700,
+    margin:5,
+    height:40,
+   
+  },
+  textbutton:{
+    fontSize:30,
+    color:"white",
+    textAlign:"center",
+  },
+ inputs:{
+color:"white",
+borderColor:"white",
+borderWidth:2,
+width: 700,
+margin:5,
+height:40,
+fontSize:25,
+backgroundColor:"black",
+ },
 });
 
 export default styles;
